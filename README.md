@@ -6,8 +6,10 @@ available on `kamailio.org` website. It was tested with Chromium-based browsers
 
 Among others, it targets to auto-generate the URL to documentation of modules
 (stable and development versions), wiki, search on `kamailio.org` or
-`lists.kamailio.org`. It can be useful for people spending significant time
-offering services for Kamailio project (open source SIP/VoIP server):
+`lists.kamailio.org` using `Google`.
+
+This extension can be useful for people spending daily significant time within
+Kamailio project (open source SIP/VoIP server) ecosystem:
 
   * https://www.kamailio.org
 
@@ -21,9 +23,10 @@ At this moment the extension is not packaged, not being available in the
 extensions store of the browsers. It has to be manually installed from the
 source code folder.
 
-Given that is require to register as a developer for each browser in order to
-get the extension signed and published in the stores, at this moment is not
-expected to make it available there.
+Given that is required to register as a developer for each browser organization
+in order to be able to sign and publish the extension in their stores, there is
+no plan at this moment to do it, installation from source folder not being a
+complex process.
 
 ### Chromium Browsers ###
 
@@ -97,6 +100,12 @@ although it seems to be an upper limit like `15` (as seen in Chrome).
 Similar to `m`, but navigates to documentation of the module in the development
 branch.
 
+Example:
+
+```
+md tm
+```
+
 ### Command: s text ###
 
 Navigate to `google.com` with URL built to search `text` on `kamailio.org` site.
@@ -114,7 +123,7 @@ s htable with dmq replication
 Similar to `s`, but narrows the search on `lists.kamailio.org` site.
 
 ```
-sl htable with dmq replication
+sl location with dmq replication
 ```
 
 ### Command: w ###
