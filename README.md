@@ -58,6 +58,11 @@ at that moment, the browser goes to `kamailio.org` home page.
 After the extension is activated, couple of commands are available. Type the
 command followed by `space` and parameters (where is the case).
 
+If the command is unknown, then it is expected to be a full module name, the
+navigation goes to the documentation of that module in the stable branch. This
+is like a shortcut to `m` command, but without auto-complete suggestions
+(see next for details about `m` command).
+
 The commands are listed in the next sections.
 
 ### Command: m name ###
@@ -106,6 +111,17 @@ Similar to `s`, but narrows the search on `lists.kamailio.org` site.
 
 ```
 sl htable with dmq replication
+```
+
+### Command: w ###
+
+Navigate to main wiki site. No parameters are expected, if there is text after
+`w`, then it is not considered to be this command.
+
+Example:
+
+```
+w
 ```
 
 ## To-Do ##
