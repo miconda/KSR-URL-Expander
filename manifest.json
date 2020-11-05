@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Kamailio.org URL Expander",
+  "short_name": "KSR URL Expander",
+  "description": "Expand URL to Kamailio website resources - type: 'ksr'",
+  "version": "1.0.0",
+  "omnibox": { "keyword" : "ksr" },
+  "homepage_url": "https://github.com/miconda/KSR-URL-Expander",
+  "icons": {
+    "16": "assets/kamailio_16x16.png",
+    "32": "assets/kamailio_32x32.png",
+    "48": "assets/kamailio_48x48.png",
+    "64": "assets/kamailio_64x64.png",
+    "128": "assets/kamailio_128x128.png"
+  },
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  }
+}
