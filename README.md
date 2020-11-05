@@ -11,6 +11,10 @@ offering services for Kamailio project (open source SIP/VoIP server):
 
   * https://www.kamailio.org
 
+See it in action:
+
+![Screencast](https://github.com/miconda/vresources/raw/master/ksr-url-expander/ksr-url-expander.gif)
+
 ## Installation ##
 
 At this moment the extension is not packaged, not being available in the
