@@ -303,7 +303,9 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
     return;
   }
 
-  if (inText.indexOf("s ") === 0) {
+  if (inText === "w") {
+    fullURL += '/wiki';
+  } else if (inText.indexOf("s ") === 0) {
     fullURL = 'https://www.google.com/search?q=' + inText.substr(2).trim() + ' site:kamailio.org';
   } else if (inText.indexOf("sl ") === 0) {
     fullURL = 'https://www.google.com/search?q=' + inText.substr(3).trim() + ' site:lists.kamailio.org';
