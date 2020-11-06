@@ -254,9 +254,9 @@ const ksrModules = [
 ];
 
 /*
-Return an array of SuggestResult objects,
-one for each CSS property that matches the user's input.
-*/
+ * Return an array of SuggestResult objects,
+ * one for each item that matches the user's input.
+ */
 function getMatchingModules(input) {
   var result = [];
   var modCmd = "";
@@ -286,14 +286,24 @@ function getMatchingModules(input) {
   return result;
 }
 
+/*
+ * hint text when the extension is activated
+ */
 chrome.omnibox.setDefaultSuggestion({
   description: "Type the kamilio.org URL expand expression"
 });
 
+/*
+ * executed on typing
+ */
 chrome.omnibox.onInputChanged.addListener(function(input, suggest) {
   suggest(getMatchingModules(input));
 });
 
+
+/*
+ * executed on <enter>
+ */
 chrome.omnibox.onInputEntered.addListener(function(text) {
   var inText = text.trim();
   var fullURL = 'https://www.kamailio.org';
