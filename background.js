@@ -253,26 +253,51 @@ const ksrModules = [
   "xprint"
 ];
 
+/**
+ * version series for wiki docs
+ */
+const ksrSeries = [
+  "devel",
+  "5.4.x",
+  "5.3.x",
+  "5.2.x",
+  "5.1.x",
+  "5.0.x",
+  "4.4.x",
+];
+
 /*
  * Return an array of SuggestResult objects,
  * one for each item that matches the user's input.
  */
 function getMatchingModules(input) {
   var result = [];
-  var modCmd = "";
-  var modName = "";
+  var cmdMods = "";
+  var cmdParam = "";
+  var cmdWiki = "";
+
   if (input.indexOf("m ") === 0) {
-    modCmd = "m ";
-    modName = input.substr(2).trim();
+    cmdMods = "m ";
+    cmdParam = input.substr(2).trim();
   } else if (input.indexOf("md ") === 0) {
-    modCmd = "md ";
-    modName = input.substr(3).trim();
+    cmdMods = "md ";
+    cmdParam = input.substr(3).trim();
+  } if (input.indexOf("cc ") === 0) {
+    cmdWiki = "cc ";
+    cmdParam = input.substr(3).trim();
+  } if (input.indexOf("pv ") === 0) {
+    cmdWiki = "pv ";
+    cmdParam = input.substr(3).trim();
+  } if (input.indexOf("tr ") === 0) {
+    cmdWiki = "tr ";
+    cmdParam = input.substr(3).trim();
   }
-  if (modCmd.length > 0) {
+
+  if (cmdMods.length > 0) {
     for (m of ksrModules) {
-      if (m.indexOf(modName) === 0) {
+      if (m.indexOf(cmdParam) === 0) {
         let suggestion = {
-          content: modCmd + m,
+          content: cmdMods + m,
           description: m
         }
         result.push(suggestion);
@@ -283,6 +308,23 @@ function getMatchingModules(input) {
       }
     }
   }
+
+  if (cmdWiki.length > 0) {
+    for (m of ksrSeries) {
+      if (m.indexOf(cmdParam) === 0) {
+        let suggestion = {
+          content: cmdWiki + m,
+          description: m
+        }
+        result.push(suggestion);
+      } else {
+        if (result.length != 0) {
+          return result;
+        }
+      }
+    }
+  }
+
   return result;
 }
 
@@ -323,6 +365,18 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
     fullURL += '/docs/modules/stable/modules/' + inText.substr(2).trim() + '.html';
   } else if (inText.indexOf("md ") === 0) {
     fullURL += '/docs/modules/devel/modules/' + inText.substr(3).trim() + '.html';
+  } else if (inText === "cc") {
+    fullURL += '/wiki/cookbooks/' +  ksrSeries[1] + '/core';
+  } else if (inText.indexOf("cc ") === 0) {
+    fullURL += '/wiki/cookbooks/' + inText.substr(3).trim() + '/core';
+  } else if (inText === "pv") {
+    fullURL += '/wiki/cookbooks/' +  ksrSeries[1] + '/pseudovariables';
+  } else if (inText.indexOf("pv ") === 0) {
+    fullURL += '/wiki/cookbooks/' + inText.substr(3).trim() + '/pseudovariables';
+  } else if (inText === "tr") {
+    fullURL += '/wiki/cookbooks/' +  ksrSeries[1] + '/transformations';
+  } else if (inText.indexOf("tr ") === 0) {
+    fullURL += '/wiki/cookbooks/' + inText.substr(3).trim() + '/transformations';
   } else {
     fullURL += '/docs/modules/stable/modules/' + inText + '.html';
   }
