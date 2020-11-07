@@ -137,13 +137,54 @@ Example:
 w
 ```
 
+### Command: cc series ###
+
+Navigate to Kamailio wiki core cookbook. The `series` parameter can be:
+
+  * devel
+  * 5.4.x
+  * 5.3.x
+  * 5.2.x
+  * 5.1.x
+  * 5.0.x
+  * 4.4.x
+
+If `series` parameter is missing, then it goes to the latest stable series
+(the second in the above list).
+
+Example:
+
+```
+cc 5.4.x
+```
+
+### Command: pv series ###
+
+Navigate to Kamailio wiki pseudo-variables cookbook. The `series` parameter is
+the same as for `cc` command.
+
+Example:
+
+```
+pv 5.4.x
+```
+
+### Command: tr series ###
+
+Navigate to Kamailio wiki transformations cookbook. The `series` parameter is
+the same as for `cc` command.
+
+Example:
+
+```
+tr 5.4.x
+```
+
 ## To-Do ##
 
 Among planned features:
 
-  * [ ] navigate to core cookbooks by version
-  * [ ] navigate to pseudo-variables cookbooks by version
-  * [ ] navigate to transformations cookbooks by version
+  * [ ] navigate to github organization (project, issues, pull requests)
 
 ## License ##
 
