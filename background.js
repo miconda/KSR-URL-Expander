@@ -357,6 +357,12 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
 
   if (inText === "w") {
     fullURL += '/wiki';
+  } else if (inText === "gh") {
+    fullURL = 'https://github.com/kamailio/kamailio';
+  } else if (inText === "ghi") {
+    fullURL = 'https://github.com/kamailio/kamailio/issues';
+  } else if (inText === "ghp") {
+    fullURL = 'https://github.com/kamailio/kamailio/pulls';
   } else if (inText.indexOf("s ") === 0) {
     fullURL = 'https://www.google.com/search?q=' + inText.substr(2).trim() + ' site:kamailio.org';
   } else if (inText.indexOf("sl ") === 0) {
