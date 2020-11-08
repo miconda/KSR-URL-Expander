@@ -180,6 +180,39 @@ Example:
 tr 5.4.x
 ```
 
+### Command: gh ###
+
+Navigate to main `github.com` project page. No parameters are expected, if there is text after
+`gh`, then it is not considered to be this command.
+
+Example:
+
+```
+gh
+```
+
+### Command: ghi ###
+
+Navigate to issues page on `github.com` project. No parameters are expected, if there is text after
+`ghi`, then it is not considered to be this command.
+
+Example:
+
+```
+ghi
+```
+
+### Command: ghp ###
+
+Navigate to pull requests page on `github.com` project . No parameters are expected, if there is text after
+`ghp`, then it is not considered to be this command.
+
+Example:
+
+```
+ghp
+```
+
 ## To-Do ##
 
 Among planned features:
