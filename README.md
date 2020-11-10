@@ -213,6 +213,17 @@ Example:
 ghp
 ```
 
+### Command: ke ###
+
+Navigate to KEMI documentation (development branch) . No parameters are expected, if there is text after
+`ke`, then it is not considered to be this command.
+
+Example:
+
+```
+ke
+```
+
 ## To-Do ##
 
 Among planned features:
