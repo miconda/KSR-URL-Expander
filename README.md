@@ -224,12 +224,6 @@ Example:
 ke
 ```
 
-## To-Do ##
-
-Among planned features:
-
-  * [ ] navigate to github organization (project, issues, pull requests)
-
 ## License ##
 
 `BSD 3-Clause License`
