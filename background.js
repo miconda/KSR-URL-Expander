@@ -363,6 +363,8 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
     fullURL = 'https://github.com/kamailio/kamailio/issues';
   } else if (inText === "ghp") {
     fullURL = 'https://github.com/kamailio/kamailio/pulls';
+  } else if (inText === "ke") {
+    fullURL += '/docs/tutorials/devel/kamailio-kemi-framework/';
   } else if (inText.indexOf("s ") === 0) {
     fullURL = 'https://www.google.com/search?q=' + inText.substr(2).trim() + ' site:kamailio.org';
   } else if (inText.indexOf("sl ") === 0) {
