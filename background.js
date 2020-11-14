@@ -357,6 +357,8 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
 
   if (inText === "w") {
     fullURL += '/wiki';
+  } else if (inText === "faq") {
+    fullURL += '/wiki/tutorials/faq/main';
   } else if (inText === "gh") {
     fullURL = 'https://github.com/kamailio/kamailio';
   } else if (inText === "ghi") {
