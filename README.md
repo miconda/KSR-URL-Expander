@@ -215,13 +215,28 @@ ghp
 
 ### Command: ke ###
 
-Navigate to KEMI documentation (development branch) . No parameters are expected, if there is text after
+Navigate to KEMI documentation (development branch). No parameters are expected, if there is text after
 `ke`, then it is not considered to be this command.
 
 Example:
 
 ```
 ke
+```
+
+### Command: faq ###
+
+Navigate to Frequently Asked Questions page on the wiki portal.
+
+  * https://www.kamailio.org/wiki/tutorials/faq/main
+
+No parameters are expected, if there is text after `faq`, then it is not considered
+to be this command.
+
+Example:
+
+```
+faq
 ```
 
 ## License ##
