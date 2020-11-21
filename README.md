@@ -239,6 +239,17 @@ Example:
 faq
 ```
 
+### Command: u ###
+
+Navigate to `KSR-URL-Expander` github project page. No parameters are expected, if there is text after
+`u`, then it is not considered to be this command.
+
+Example:
+
+```
+u
+```
+
 ## License ##
 
 `BSD 3-Clause License`
