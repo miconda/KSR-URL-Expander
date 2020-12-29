@@ -191,6 +191,17 @@ Example:
 gh
 ```
 
+### Command: ghc commitid ###
+
+Navigate to commit page on `github.com` project. The parameter has to be the hexa commit id.
+If the parameter is not provided, it jumps to the page listing the commits in master branch.
+
+Example:
+
+```
+ghc dd717b80be6f8e9519aa4b3d627cb88267b81146
+```
+
 ### Command: ghi ###
 
 Navigate to issues page on `github.com` project. No parameters are expected, if there is text after
