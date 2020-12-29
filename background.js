@@ -389,6 +389,10 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
     fullURL += '/wiki/cookbooks/' +  ksrSeries[1] + '/transformations';
   } else if (inText.indexOf("tr ") === 0) {
     fullURL += '/wiki/cookbooks/' + inText.substr(3).trim() + '/transformations';
+  } else if (inText === "ghc") {
+    fullURL = 'https://github.com/kamailio/kamailio/commits/master';
+  } else if (inText.indexOf("ghc ") === 0) {
+    fullURL = 'https://github.com/kamailio/kamailio/commit/' + inText.substr(4).trim();
   } else {
     fullURL += '/docs/modules/stable/modules/' + inText + '.html';
   }
