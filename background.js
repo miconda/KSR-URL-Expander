@@ -266,6 +266,15 @@ const ksrSeries = [
   "4.4.x",
 ];
 
+/**
+ * mailing lists
+ */
+const ksrMailingLists = [
+  "sr-users",
+  "sr-dev",
+  "business",
+];
+
 /*
  * Return an array of SuggestResult objects,
  * one for each item that matches the user's input.
@@ -275,6 +284,7 @@ function getMatchingModules(input) {
   var cmdMods = "";
   var cmdParam = "";
   var cmdWiki = "";
+  var cmdList = "";
 
   if (input.indexOf("m ") === 0) {
     cmdMods = "m ";
@@ -282,15 +292,18 @@ function getMatchingModules(input) {
   } else if (input.indexOf("md ") === 0) {
     cmdMods = "md ";
     cmdParam = input.substr(3).trim();
-  } if (input.indexOf("cc ") === 0) {
+  } else if (input.indexOf("cc ") === 0) {
     cmdWiki = "cc ";
     cmdParam = input.substr(3).trim();
-  } if (input.indexOf("pv ") === 0) {
+  } else if (input.indexOf("pv ") === 0) {
     cmdWiki = "pv ";
     cmdParam = input.substr(3).trim();
-  } if (input.indexOf("tr ") === 0) {
+  } else if (input.indexOf("tr ") === 0) {
     cmdWiki = "tr ";
     cmdParam = input.substr(3).trim();
+  } else if (input.indexOf("l ") === 0) {
+      cmdList = "l ";
+      cmdParam = input.substr(2).trim();
   }
 
   if (cmdMods.length > 0) {
@@ -314,6 +327,22 @@ function getMatchingModules(input) {
       if (m.indexOf(cmdParam) === 0) {
         let suggestion = {
           content: cmdWiki + m,
+          description: m
+        }
+        result.push(suggestion);
+      } else {
+        if (result.length != 0) {
+          return result;
+        }
+      }
+    }
+  }
+
+  if (cmdList.length > 0) {
+    for (m of ksrMailingLists) {
+      if (m.indexOf(cmdParam) === 0) {
+        let suggestion = {
+          content: cmdList + m,
           description: m
         }
         result.push(suggestion);
@@ -393,6 +422,10 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
     fullURL = 'https://github.com/kamailio/kamailio/commits/master';
   } else if (inText.indexOf("ghc ") === 0) {
     fullURL = 'https://github.com/kamailio/kamailio/commit/' + inText.substr(4).trim();
+  } else if (inText === "l") {
+    fullURL = 'https://lists.kamailio.org/cgi-bin/mailman/listinfo';
+  } else if (inText.indexOf("l ") === 0) {
+    fullURL = 'https://lists.kamailio.org/pipermail/' + inText.substr(2).trim() + '/';
   } else {
     fullURL += '/docs/modules/stable/modules/' + inText + '.html';
   }
