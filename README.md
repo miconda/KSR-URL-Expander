@@ -180,6 +180,21 @@ Example:
 tr 5.4.x
 ```
 
+### Command: faq ###
+
+Navigate to Frequently Asked Questions page on the wiki portal.
+
+  * https://www.kamailio.org/wiki/tutorials/faq/main
+
+No parameters are expected, if there is text after `faq`, then it is not considered
+to be this command.
+
+Example:
+
+```
+faq
+```
+
 ### Command: gh ###
 
 Navigate to main `github.com` project page. No parameters are expected, if there is text after
@@ -235,19 +250,15 @@ Example:
 ke
 ```
 
-### Command: faq ###
+### Command: l listid ###
 
-Navigate to Frequently Asked Questions page on the wiki portal.
-
-  * https://www.kamailio.org/wiki/tutorials/faq/main
-
-No parameters are expected, if there is text after `faq`, then it is not considered
-to be this command.
+Navigate to mailing list archive. If `listid` parameter is not provided, then
+navigate to the index page of the mailing lists.
 
 Example:
 
 ```
-faq
+l sr-users
 ```
 
 ### Command: u ###
