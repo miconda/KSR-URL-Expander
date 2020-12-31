@@ -273,6 +273,9 @@ const ksrMailingLists = [
   "sr-users",
   "sr-dev",
   "business",
+  "kamailio-announce",
+  "sr-users-es",
+  "sr-docs",
 ];
 
 /*
