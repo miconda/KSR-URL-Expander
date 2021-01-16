@@ -2,7 +2,7 @@
  *
  * Browser Extension (omnibox) - URL Expander For Kamailio.org Resources
  *
- * Copyright (C) 2020 Daniel-Constantin Mierla <miconda@gmail.com>
+ * Copyright (C) 2020-2021 Daniel-Constantin Mierla <miconda@gmail.com>
  *
  * BSD 3-Clause License (see LICENSE file)
  *
