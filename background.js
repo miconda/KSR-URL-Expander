@@ -429,6 +429,8 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
     fullURL = 'https://lists.kamailio.org/cgi-bin/mailman/listinfo';
   } else if (inText.indexOf("l ") === 0) {
     fullURL = 'https://lists.kamailio.org/pipermail/' + inText.substr(2).trim() + '/';
+  } else if (inText === "kw") {
+    fullURL = 'https://www.kamailioworld.com';
   } else {
     fullURL += '/docs/modules/stable/modules/' + inText + '.html';
   }
