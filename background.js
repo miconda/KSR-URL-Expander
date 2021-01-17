@@ -388,9 +388,9 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
   }
 
   if (inText === "w") {
-    fullURL += '/wiki';
+    fullURL = 'https://www.kamailio.org/wiki';
   } else if (inText === "faq") {
-    fullURL += '/wiki/tutorials/faq/main';
+    fullURL = 'https://www.kamailio.org/wiki/tutorials/faq/main';
   } else if (inText === "gh") {
     fullURL = 'https://github.com/kamailio/kamailio';
   } else if (inText === "ghi") {
@@ -398,7 +398,7 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
   } else if (inText === "ghp") {
     fullURL = 'https://github.com/kamailio/kamailio/pulls';
   } else if (inText === "ke") {
-    fullURL += '/docs/tutorials/devel/kamailio-kemi-framework/';
+    fullURL = 'https://www.kamailio.org/docs/tutorials/devel/kamailio-kemi-framework/';
   } else if (inText === "u") {
     fullURL = 'https://github.com/miconda/KSR-URL-Expander';
   } else if (inText.indexOf("s ") === 0) {
@@ -406,21 +406,21 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
   } else if (inText.indexOf("sl ") === 0) {
     fullURL = 'https://www.google.com/search?q=' + inText.substr(3).trim() + ' site:lists.kamailio.org';
   } else if (inText.indexOf("m ") === 0) {
-    fullURL += '/docs/modules/stable/modules/' + inText.substr(2).trim() + '.html';
+    fullURL = 'https://www.kamailio.org/docs/modules/stable/modules/' + inText.substr(2).trim() + '.html';
   } else if (inText.indexOf("md ") === 0) {
-    fullURL += '/docs/modules/devel/modules/' + inText.substr(3).trim() + '.html';
+    fullURL = 'https://www.kamailio.org/docs/modules/devel/modules/' + inText.substr(3).trim() + '.html';
   } else if (inText === "cc") {
-    fullURL += '/wiki/cookbooks/' +  ksrSeries[1] + '/core';
+    fullURL = 'https://www.kamailio.org/wiki/cookbooks/' +  ksrSeries[1] + '/core';
   } else if (inText.indexOf("cc ") === 0) {
-    fullURL += '/wiki/cookbooks/' + inText.substr(3).trim() + '/core';
+    fullURL = 'https://www.kamailio.org/wiki/cookbooks/' + inText.substr(3).trim() + '/core';
   } else if (inText === "pv") {
-    fullURL += '/wiki/cookbooks/' +  ksrSeries[1] + '/pseudovariables';
+    fullURL = 'https://www.kamailio.org/wiki/cookbooks/' +  ksrSeries[1] + '/pseudovariables';
   } else if (inText.indexOf("pv ") === 0) {
-    fullURL += '/wiki/cookbooks/' + inText.substr(3).trim() + '/pseudovariables';
+    fullURL = 'https://www.kamailio.org/wiki/cookbooks/' + inText.substr(3).trim() + '/pseudovariables';
   } else if (inText === "tr") {
-    fullURL += '/wiki/cookbooks/' +  ksrSeries[1] + '/transformations';
+    fullURL = 'https://www.kamailio.org/wiki/cookbooks/' +  ksrSeries[1] + '/transformations';
   } else if (inText.indexOf("tr ") === 0) {
-    fullURL += '/wiki/cookbooks/' + inText.substr(3).trim() + '/transformations';
+    fullURL = 'https://www.kamailio.org/wiki/cookbooks/' + inText.substr(3).trim() + '/transformations';
   } else if (inText === "ghc") {
     fullURL = 'https://github.com/kamailio/kamailio/commits/master';
   } else if (inText.indexOf("ghc ") === 0) {
@@ -432,7 +432,7 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
   } else if (inText === "kw") {
     fullURL = 'https://www.kamailioworld.com';
   } else {
-    fullURL += '/docs/modules/stable/modules/' + inText + '.html';
+    fullURL = 'https://www.kamailio.org/docs/modules/stable/modules/' + inText + '.html';
   }
 
   chrome.tabs.update({url: fullURL});
