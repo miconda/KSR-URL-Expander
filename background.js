@@ -397,6 +397,10 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
     fullURL = 'https://github.com/kamailio/kamailio/issues';
   } else if (inText === "ghp") {
     fullURL = 'https://github.com/kamailio/kamailio/pulls';
+  } else if (inText === "ghk") {
+    fullURL = 'https://github.com/kamailio/kamailio-docs/tree/master/kamailio-kemi-framework/docs';
+  } else if (inText === "ghd") {
+    fullURL = 'https://github.com/kamailio/kamailio-docs';
   } else if (inText === "ke") {
     fullURL = 'https://www.kamailio.org/docs/tutorials/devel/kamailio-kemi-framework/';
   } else if (inText === "u") {
