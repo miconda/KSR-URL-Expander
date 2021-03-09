@@ -228,6 +228,28 @@ Example:
 ghi
 ```
 
+### Command: ghd ###
+
+Navigate to `kamailio-docs` repository on `github.com` project. No parameters are expected, if there is text after
+`ghd`, then it is not considered to be this command.
+
+Example:
+
+```
+ghd
+```
+
+### Command: ghk ###
+
+Navigate to KEMI tutorial in `kamailio-docs` repository on `github.com` project. No parameters are expected, if there is text after
+`ghk`, then it is not considered to be this command.
+
+Example:
+
+```
+ghk
+```
+
 ### Command: ghp ###
 
 Navigate to pull requests page on `github.com` project . No parameters are expected, if there is text after
