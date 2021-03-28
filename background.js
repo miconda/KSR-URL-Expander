@@ -411,8 +411,12 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
     fullURL = 'https://www.google.com/search?q=' + inText.substr(3).trim() + ' site:lists.kamailio.org';
   } else if (inText.indexOf("m ") === 0) {
     fullURL = 'https://www.kamailio.org/docs/modules/stable/modules/' + inText.substr(2).trim() + '.html';
+  } else if (inText === "m") {
+    fullURL = 'https://www.kamailio.org/docs/modules/stable/';
   } else if (inText.indexOf("md ") === 0) {
     fullURL = 'https://www.kamailio.org/docs/modules/devel/modules/' + inText.substr(3).trim() + '.html';
+  } else if (inText === "md") {
+    fullURL = 'https://www.kamailio.org/docs/modules/devel/';
   } else if (inText === "cc") {
     fullURL = 'https://www.kamailio.org/wiki/cookbooks/' +  ksrSeries[1] + '/core';
   } else if (inText.indexOf("cc ") === 0) {
