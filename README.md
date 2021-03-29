@@ -84,6 +84,9 @@ Example:
 m acc
 ```
 
+If no module name is provided after `m`, then the navigation jumps to the index
+of modules for stable branch.
+
 **Note**: the list of module names is included in the extension, based on current
 Kamailio development version. Therefore some modules might not be available in
 stable and older versions of Kamailio.
@@ -105,6 +108,9 @@ Example:
 ```
 md tm
 ```
+
+If no module name is provided after `md`, then the navigation jumps to the index
+of modules for development branch.
 
 ### Command: s text ###
 
