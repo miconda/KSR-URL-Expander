@@ -264,6 +264,7 @@ const ksrModules = [
  */
 const ksrSeries = [
   "devel",
+  "5.5.x",
   "5.4.x",
   "5.3.x",
   "5.2.x",
