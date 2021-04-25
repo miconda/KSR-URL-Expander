@@ -256,6 +256,17 @@ Example:
 ghk
 ```
 
+### Command: ghv ###
+
+Navigate to `vim-kamailio-syntax` repository on `github.com` project. No parameters are expected, if there is text after
+`ghv`, then it is not considered to be this command.
+
+Example:
+
+```
+ghv
+```
+
 ### Command: ghp ###
 
 Navigate to pull requests page on `github.com` project . No parameters are expected, if there is text after
