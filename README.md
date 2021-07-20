@@ -186,6 +186,17 @@ Example:
 tr 5.4.x
 ```
 
+### Command: aif series ###
+
+Navigate to Kamailio wiki alphabetic index of functions. The `series` parameter is
+the same as for `cc` command.
+
+Example:
+
+```
+aif 5.5.x
+```
+
 ### Command: faq ###
 
 Navigate to Frequently Asked Questions page on the wiki portal.
