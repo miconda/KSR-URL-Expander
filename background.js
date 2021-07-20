@@ -314,6 +314,9 @@ function getMatchingModules(input) {
   } else if (input.indexOf("l ") === 0) {
       cmdList = "l ";
       cmdParam = input.substr(2).trim();
+  } else if (input.indexOf("aif ") === 0) {
+      cmdWiki = "aif ";
+      cmdParam = input.substr(4).trim();
   }
 
   if (cmdMods.length > 0) {
@@ -448,6 +451,10 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
     fullURL = 'https://lists.kamailio.org/pipermail/' + inText.substr(2).trim() + '/';
   } else if (inText === "kw") {
     fullURL = 'https://www.kamailioworld.com';
+  } else if (inText.indexOf("aif ") === 0) {
+    fullURL = 'https://www.kamailio.org/wiki/alphaindexes/' + inText.substr(3).trim() + '/modfunctions';
+  } else if (inText === "aif") {
+    fullURL = 'https://www.kamailio.org/wiki/alphaindexes/' +  ksrSeries[1] + '/modfunctions';
   } else {
     fullURL = 'https://www.kamailio.org/docs/modules/stable/modules/' + inText + '.html';
   }
