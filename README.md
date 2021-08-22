@@ -165,6 +165,10 @@ Example:
 cc 5.4.x
 ```
 
+### Command: ccd ###
+
+Navigate to Kamailio wiki core cookbook for development branch.
+
 ### Command: pv series ###
 
 Navigate to Kamailio wiki pseudo-variables cookbook. The `series` parameter is
@@ -176,6 +180,10 @@ Example:
 pv 5.4.x
 ```
 
+### Command: pvd ###
+
+Navigate to Kamailio wiki pseudo-variables cookbook for development branch.
+
 ### Command: tr series ###
 
 Navigate to Kamailio wiki transformations cookbook. The `series` parameter is
@@ -186,6 +194,10 @@ Example:
 ```
 tr 5.4.x
 ```
+
+### Command: trd ###
+
+Navigate to Kamailio wiki transformations cookbook for development branch.
 
 ### Command: aif series ###
 
