@@ -433,14 +433,20 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
     fullURL = 'https://www.kamailio.org/wiki/cookbooks/' +  ksrSeries[1] + '/core';
   } else if (inText.indexOf("cc ") === 0) {
     fullURL = 'https://www.kamailio.org/wiki/cookbooks/' + inText.substr(3).trim() + '/core';
+  } else if (inText === "ccd") {
+    fullURL = 'https://www.kamailio.org/wiki/cookbooks/deve/core';
   } else if (inText === "pv") {
     fullURL = 'https://www.kamailio.org/wiki/cookbooks/' +  ksrSeries[1] + '/pseudovariables';
   } else if (inText.indexOf("pv ") === 0) {
     fullURL = 'https://www.kamailio.org/wiki/cookbooks/' + inText.substr(3).trim() + '/pseudovariables';
+  } else if (inText === "pvd") {
+    fullURL = 'https://www.kamailio.org/wiki/cookbooks/devel/pseudovariables';
   } else if (inText === "tr") {
     fullURL = 'https://www.kamailio.org/wiki/cookbooks/' +  ksrSeries[1] + '/transformations';
   } else if (inText.indexOf("tr ") === 0) {
     fullURL = 'https://www.kamailio.org/wiki/cookbooks/' + inText.substr(3).trim() + '/transformations';
+  } else if (inText === "trd") {
+    fullURL = 'https://www.kamailio.org/wiki/cookbooks/devel/transformations';
   } else if (inText === "ghc") {
     fullURL = 'https://github.com/kamailio/kamailio/commits/master';
   } else if (inText.indexOf("ghc ") === 0) {
