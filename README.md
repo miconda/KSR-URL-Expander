@@ -335,6 +335,28 @@ Example:
 u
 ```
 
+### Command: ke ###
+
+Navigate to main `kamailioworld.com` page. No parameters are expected, if there is text after
+`kw`, then it is not considered to be this command.
+
+Example:
+
+```
+kw
+```
+
+### Command: re ###
+
+Navigate to `https://github.com/sipwise/rtpengine` - RTPEngine project page. No parameters are expected, if there is text after
+`re`, then it is not considered to be this command.
+
+Example:
+
+```
+re
+```
+
 ## License ##
 
 `BSD 3-Clause License`
