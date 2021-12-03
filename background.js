@@ -434,7 +434,7 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
   } else if (inText.indexOf("cc ") === 0) {
     fullURL = 'https://www.kamailio.org/wiki/cookbooks/' + inText.substr(3).trim() + '/core';
   } else if (inText === "ccd") {
-    fullURL = 'https://www.kamailio.org/wiki/cookbooks/deve/core';
+    fullURL = 'https://www.kamailio.org/wiki/cookbooks/devel/core';
   } else if (inText === "pv") {
     fullURL = 'https://www.kamailio.org/wiki/cookbooks/' +  ksrSeries[1] + '/pseudovariables';
   } else if (inText.indexOf("pv ") === 0) {
