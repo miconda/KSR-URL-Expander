@@ -143,6 +143,17 @@ Example:
 w
 ```
 
+### Command: wo ###
+
+Navigate to old wiki site. No parameters are expected, if there is text after
+`wo`, then it is not considered to be this command.
+
+Example:
+
+```
+wo
+```
+
 ### Command: cc series ###
 
 Navigate to Kamailio wiki core cookbook. The `series` parameter can be:
@@ -214,7 +225,7 @@ aif 5.5.x
 
 Navigate to Frequently Asked Questions page on the wiki portal.
 
-  * https://www.kamailio.org/wiki/tutorials/faq/main
+  * https://www.kamailio.org/wikidocs/tutorials/faq/main
 
 No parameters are expected, if there is text after `faq`, then it is not considered
 to be this command.
