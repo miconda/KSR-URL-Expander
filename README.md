@@ -159,6 +159,7 @@ wo
 Navigate to Kamailio wiki core cookbook. The `series` parameter can be:
 
   * devel
+  * 5.6.x
   * 5.5.x
   * 5.4.x
   * 5.3.x
