@@ -3,7 +3,7 @@
   "name": "Kamailio.org URL Expander",
   "short_name": "KSR URL Expander",
   "description": "Expand URL to Kamailio website resources - type: 'ksr'",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "omnibox": { "keyword" : "ksr" },
   "homepage_url": "https://github.com/miconda/KSR-URL-Expander",
   "icons": {
