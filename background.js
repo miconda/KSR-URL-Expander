@@ -412,6 +412,8 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
     fullURL = 'https://www.kamailio.org/wikidocs/tutorials/faq/main';
   } else if (inText === "gh") {
     fullURL = 'https://github.com/kamailio/kamailio';
+  } else if (inText === "gha") {
+    fullURL = 'https://github.com/kamailio/kamailio/actions';
   } else if (inText === "ghi") {
     fullURL = 'https://github.com/kamailio/kamailio/issues';
   } else if (inText === "ghp") {
