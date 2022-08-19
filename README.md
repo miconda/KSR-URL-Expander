@@ -281,6 +281,17 @@ Example:
 ghd
 ```
 
+### Command: ghw ###
+
+Navigate to `kamailio-wiki` repository on `github.com` project. No parameters are expected, if there is text after
+`ghw`, then it is not considered to be this command.
+
+Example:
+
+```
+ghw
+```
+
 ### Command: ghk ###
 
 Navigate to KEMI tutorial in `kamailio-docs` repository on `github.com` project. No parameters are expected, if there is text after
