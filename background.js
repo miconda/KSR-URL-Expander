@@ -231,6 +231,7 @@ const ksrModules = [
   "textopsx",
   "timer",
   "tls",
+  "tls_wolfssl",
   "tlsa",
   "tm",
   "tmrec",
