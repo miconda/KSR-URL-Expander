@@ -303,6 +303,21 @@ Example:
 ghk
 ```
 
+### Command: ghm name ###
+
+Navigate to folder of the module specified by `name` in the development branch of the
+`github.com` repository. The command presents suggestions of module names as you
+type. You can continue typing the full name of the module or select from the suggestions.
+
+Example:
+
+```
+ghm acc
+```
+
+If no module name is provided after `ghm`, then the navigation jumps to the index
+of modules for development branch.
+
 ### Command: ghv ###
 
 Navigate to `vim-kamailio-syntax` repository on `github.com` project. No parameters are expected, if there is text after
