@@ -320,11 +320,14 @@ function getMatchingModules(input) {
     cmdWiki = "tr ";
     cmdParam = input.substr(3).trim();
   } else if (input.indexOf("l ") === 0) {
-      cmdList = "l ";
-      cmdParam = input.substr(2).trim();
+    cmdList = "l ";
+    cmdParam = input.substr(2).trim();
   } else if (input.indexOf("aif ") === 0) {
-      cmdWiki = "aif ";
-      cmdParam = input.substr(4).trim();
+    cmdWiki = "aif ";
+    cmdParam = input.substr(4).trim();
+  } else if (input.indexOf("ghm ") === 0) {
+    cmdMods = "ghm ";
+    cmdParam = input.substr(4).trim();
   }
 
   if (cmdMods.length > 0) {
@@ -421,6 +424,10 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
     fullURL = 'https://github.com/kamailio/kamailio/pulls';
   } else if (inText === "ghk") {
     fullURL = 'https://github.com/kamailio/kamailio-docs/tree/master/kamailio-kemi-framework/docs';
+  } else if (inText.indexOf("ghm ") === 0) {
+    fullURL = 'https://github.com/kamailio/kamailio/tree/master/src/modules/' + inText.substr(4).trim() + '/';
+  } else if (inText === "ghm") {
+    fullURL = 'https://github.com/kamailio/kamailio/tree/master/src/modules/';
   } else if (inText === "ghd") {
     fullURL = 'https://github.com/kamailio/kamailio-docs';
   } else if (inText === "ghw") {
