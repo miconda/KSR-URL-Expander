@@ -480,6 +480,10 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
     fullURL = 'https://www.kamailio.org/wikidocs/alphaindexes/' + inText.substr(3).trim() + '/modfunctions';
   } else if (inText === "aif") {
     fullURL = 'https://www.kamailio.org/wikidocs/alphaindexes/' +  ksrSeries[1] + '/modfunctions';
+  } else if (inText.indexOf("air ") === 0) {
+    fullURL = 'https://www.kamailio.org/wikidocs/alphaindexes/' + inText.substr(3).trim() + '/rpccommands';
+  } else if (inText === "air") {
+    fullURL = 'https://www.kamailio.org/wikidocs/alphaindexes/' +  ksrSeries[1] + '/rpccommands';
   } else if (inText === "kw") {
     fullURL = 'https://www.kamailioworld.com';
   } else if (inText === "re") {
