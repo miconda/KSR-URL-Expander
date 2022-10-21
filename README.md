@@ -222,6 +222,17 @@ Example:
 aif 5.5.x
 ```
 
+### Command: air series ###
+
+Navigate to Kamailio wiki alphabetic index of rpc commands. The `series` parameter is
+the same as for `cc` command.
+
+Example:
+
+```
+air 5.5.x
+```
+
 ### Command: faq ###
 
 Navigate to Frequently Asked Questions page on the wiki portal.
