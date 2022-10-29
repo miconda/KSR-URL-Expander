@@ -310,6 +310,12 @@ function getMatchingModules(input) {
   } else if (input.indexOf("md ") === 0) {
     cmdMods = "md ";
     cmdParam = input.substr(3).trim();
+  } else if (input.indexOf("mi ") === 0) {
+    cmdMods = "mi ";
+    cmdParam = input.substr(3).trim();
+  } else if (input.indexOf("mid ") === 0) {
+    cmdMods = "mid ";
+    cmdParam = input.substr(4).trim();
   } else if (input.indexOf("cc ") === 0) {
     cmdWiki = "cc ";
     cmdParam = input.substr(3).trim();
@@ -331,16 +337,31 @@ function getMatchingModules(input) {
   }
 
   if (cmdMods.length > 0) {
-    for (m of ksrModules) {
-      if (m.indexOf(cmdParam) === 0) {
-        let suggestion = {
-          content: cmdMods + m,
-          description: m
+    if (cmdMods === "mi " || cmdMods === "mid ") {
+      for (m of ksrModules) {
+        if (m.includes(cmdParam)) {
+          let suggestion = {
+            content: cmdMods + m,
+            description: m
+          }
+          result.push(suggestion);
         }
-        result.push(suggestion);
-      } else {
-        if (result.length != 0) {
-          return result;
+      }
+      if (result.length != 0) {
+        return result;
+      }
+    } else {
+      for (m of ksrModules) {
+        if (m.indexOf(cmdParam) === 0) {
+          let suggestion = {
+            content: cmdMods + m,
+            description: m
+          }
+          result.push(suggestion);
+        } else {
+          if (result.length != 0) {
+            return result;
+          }
         }
       }
     }
@@ -450,6 +471,10 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
     fullURL = 'https://www.kamailio.org/docs/modules/devel/modules/' + inText.substr(3).trim() + '.html';
   } else if (inText === "md") {
     fullURL = 'https://www.kamailio.org/docs/modules/devel/';
+  } else if (inText.indexOf("mi ") === 0) {
+    fullURL = 'https://www.kamailio.org/docs/modules/stable/modules/' + inText.substr(3).trim() + '.html';
+  } else if (inText.indexOf("mid ") === 0) {
+    fullURL = 'https://www.kamailio.org/docs/modules/devel/modules/' + inText.substr(4).trim() + '.html';
   } else if (inText === "cc") {
     fullURL = 'https://www.kamailio.org/wikidocs/cookbooks/' +  ksrSeries[1] + '/core';
   } else if (inText.indexOf("cc ") === 0) {
