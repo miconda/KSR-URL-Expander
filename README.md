@@ -75,8 +75,9 @@ The commands are listed in the next sections.
 ### Command: m name ###
 
 Navigate to documentation of the module specified by `name` in the stable branch.
-The command presents suggestions of module names as you type. You can continue
-typing the full name of the module or select from the suggestions.
+The command presents suggestions of module names as you type, based on prefix
+matching. You can continue typing the full name of the module or select from
+the suggestions.
 
 Example:
 
@@ -111,6 +112,26 @@ md tm
 
 If no module name is provided after `md`, then the navigation jumps to the index
 of modules for development branch.
+
+### Command: mi name ###
+
+Similar to `m`, but the suggestions are presented based on includes matching.
+
+Example:
+
+```
+mi red
+```
+
+### Command: mid name ###
+
+Similar to `md`, but the suggestions are presented based on includes matching.
+
+Example:
+
+```
+mid red
+```
 
 ### Command: s text ###
 
