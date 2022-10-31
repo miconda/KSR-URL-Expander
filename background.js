@@ -497,6 +497,8 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
     fullURL = 'https://github.com/kamailio/kamailio/commits/master';
   } else if (inText.indexOf("ghc ") === 0) {
     fullURL = 'https://github.com/kamailio/kamailio/commit/' + inText.substr(4).trim();
+  } else if (inText.indexOf("gho ") === 0) {
+    fullURL = 'https://github.com/' + inText.substr(4).trim();
   } else if (inText === "l") {
     fullURL = 'https://lists.kamailio.org/cgi-bin/mailman/listinfo';
   } else if (inText.indexOf("l ") === 0) {
