@@ -372,6 +372,16 @@ Example:
 ghp
 ```
 
+### Command: gho name ###
+
+Navigate to the github page of the organization specified by `name`.
+
+Example:
+
+```
+gho asipto
+```
+
 ### Command: ke ###
 
 Navigate to KEMI documentation (development branch). No parameters are expected, if there is text after
