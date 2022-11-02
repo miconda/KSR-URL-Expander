@@ -11,7 +11,7 @@ Among others, it targets to auto-generate the URL to documentation of modules
 This extension can be useful for people spending daily significant time within
 Kamailio project (open source SIP/VoIP server) ecosystem:
 
-  * https://www.kamailio.org
+  * [https://www.kamailio.org](https://www.kamailio.org)
 
 See it in action:
 
@@ -41,7 +41,7 @@ corresponding spin arrow).
 
 Useful details about managing unpacked extensions can be found at:
 
-  * https://developer.chrome.com/extensions/getstarted
+  * [https://developer.chrome.com/extensions/getstarted](https://developer.chrome.com/extensions/getstarted)
 
 ### Firefox ###
 
@@ -258,7 +258,7 @@ air 5.5.x
 
 Navigate to Frequently Asked Questions page on the wiki portal.
 
-  * https://www.kamailio.org/wikidocs/tutorials/faq/main
+  * [https://www.kamailio.org/wikidocs/tutorials/faq/main](https://www.kamailio.org/wikidocs/tutorials/faq/main)
 
 No parameters are expected, if there is text after `faq`, then it is not considered
 to be this command.
@@ -415,7 +415,7 @@ Example:
 u
 ```
 
-### Command: ke ###
+### Command: kw ###
 
 Navigate to main `kamailioworld.com` page. No parameters are expected, if there is text after
 `kw`, then it is not considered to be this command.
@@ -447,8 +447,8 @@ re
 
 Requests for new features and issues have to be reported to:
 
-  * https://github.com/miconda/KSR-URL-Expander/issues
+  * [https://github.com/miconda/KSR-URL-Expander/issues](https://github.com/miconda/KSR-URL-Expander/issues)
 
 Code and content contributions have to submitted via pull requests:
 
-  * https://github.com/miconda/KSR-URL-Expander/pulls
+  * [https://github.com/miconda/KSR-URL-Expander/pulls](https://github.com/miconda/KSR-URL-Expander/pulls)
