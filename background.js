@@ -516,7 +516,7 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
   } else if (inText === "re") {
     fullURL = 'https://github.com/sipwise/rtpengine';
   } else {
-    fullURL = 'https://www.kamailio.org/docs/modules/stable/modules/' + inText + '.html';
+    fullURL = 'https://www.kamailio.org/w/?s=' + inText;
   }
 
   chrome.tabs.update({url: fullURL});
