@@ -65,10 +65,8 @@ at that moment, the browser goes to `kamailio.org` home page.
 After the extension is activated, couple of commands are available. Type the
 command followed by `space` and parameters (where is the case).
 
-If the command is unknown, then it is expected to be a full module name, the
-navigation goes to the documentation of that module in the stable branch. This
-is like a shortcut to `m` command, but without auto-complete suggestions
-(see next for details about `m` command).
+If the command is unknown, then it goes and searches the token on the main portal
+of Kamailio web site.
 
 The commands are listed in the next sections.
 
