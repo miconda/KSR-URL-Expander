@@ -332,6 +332,9 @@ function getMatchingModules(input) {
   } else if (input.indexOf("l ") === 0) {
     cmdList = "l ";
     cmdParam = input.substr(2).trim();
+  } else if (input.indexOf("lo ") === 0) {
+    cmdList = "lo ";
+    cmdParam = input.substr(3).trim();
   } else if (input.indexOf("aif ") === 0) {
     cmdWiki = "aif ";
     cmdParam = input.substr(4).trim();
@@ -506,8 +509,11 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
   } else if (inText === "l") {
     fullURL = 'https://lists.kamailio.org/mailman3/postorius/lists/';
   } else if (inText.indexOf("l ") === 0) {
-    fullURL = 'https://lists.kamailio.org/pipermail/' + inText.substr(2).trim() + '/';
     fullURL = 'https://lists.kamailio.org/mailman3/postorius/lists/' + inText.substr(2).trim() + '.lists.kamailio.org/';
+  } else if (inText === "lo") {
+    fullURL = 'https://lists.kamailio.org/pipermail/';
+  } else if (inText.indexOf("lo ") === 0) {
+    fullURL = 'https://lists.kamailio.org/pipermail/' + inText.substr(2).trim() + '/';
   } else if (inText.indexOf("aif ") === 0) {
     fullURL = 'https://www.kamailio.org/wikidocs/alphaindexes/' + inText.substr(3).trim() + '/modfunctions';
   } else if (inText === "aif") {
