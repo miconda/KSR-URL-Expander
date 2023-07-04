@@ -504,9 +504,10 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
   } else if (inText.indexOf("gho ") === 0) {
     fullURL = 'https://github.com/' + inText.substr(4).trim();
   } else if (inText === "l") {
-    fullURL = 'https://lists.kamailio.org/cgi-bin/mailman/listinfo';
+    fullURL = 'https://lists.kamailio.org/mailman3/postorius/lists/';
   } else if (inText.indexOf("l ") === 0) {
     fullURL = 'https://lists.kamailio.org/pipermail/' + inText.substr(2).trim() + '/';
+    fullURL = 'https://lists.kamailio.org/mailman3/postorius/lists/' + inText.substr(2).trim() + '.lists.kamailio.org/';
   } else if (inText.indexOf("aif ") === 0) {
     fullURL = 'https://www.kamailio.org/wikidocs/alphaindexes/' + inText.substr(3).trim() + '/modfunctions';
   } else if (inText === "aif") {
