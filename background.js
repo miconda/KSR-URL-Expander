@@ -137,6 +137,7 @@ const ksrModules = [
   "maxfwd",
   "mediaproxy",
   "memcached",
+  "microhttpd",
   "misc_radius",
   "misctest",
   "mohqueue",
