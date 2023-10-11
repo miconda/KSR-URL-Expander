@@ -437,7 +437,9 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
     return;
   }
 
-  if (inText === "w") {
+  if (inText === ".") {
+    fullURL = 'https://www.kamailio.org';
+  } else if (inText === "w") {
     fullURL = 'https://www.kamailio.org/wikidocs';
   } else if (inText === "wo") {
       fullURL = 'https://www.kamailio.org/wiki';
