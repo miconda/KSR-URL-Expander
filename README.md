@@ -97,6 +97,17 @@ further to narrow down suggestions list to include the module you are looking fo
 The number of suggstions (the value of N) can be changed in the browser settings,
 although it seems to be an upper limit like `15` (as seen in Chrome).
 
+### Command: . ###
+
+Navigate to main `kamailio.org` site. No parameters are expected, if there is text
+ after `.`, then it is not considered to be this command.
+
+Example:
+
+```
+.
+```
+
 ### Command: md name ###
 
 Similar to `m`, but navigates to documentation of the module in the development
