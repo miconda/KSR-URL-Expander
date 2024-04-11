@@ -153,6 +153,7 @@ const ksrModules = [
   "ndb_cassandra",
   "ndb_mongodb",
   "ndb_redis",
+  "nghttp2",
   "nosip",
   "nsq",
   "osp",
