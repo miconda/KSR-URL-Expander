@@ -533,6 +533,10 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
     fullURL = 'https://www.kamailioworld.com';
   } else if (inText === "re") {
     fullURL = 'https://github.com/sipwise/rtpengine';
+  } else if (inText === "rfc") {
+    fullURL = 'https://datatracker.ietf.org/doc/html/rfc3261';
+  } else if (inText.indexOf("rfc") === 0) {
+    fullURL = 'https://datatracker.ietf.org/doc/html/' + inText.trim();
   } else {
     fullURL = 'https://www.kamailio.org/w/?s=' + inText;
   }
