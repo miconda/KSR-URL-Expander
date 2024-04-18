@@ -446,6 +446,16 @@ Example:
 re
 ```
 
+### Command: rfc ###
+
+Navigate to IEFT RFC3261, if there is text after `rpc`, then it is not considered to be this command.
+
+Example:
+
+```
+rfc
+```
+
 ## License ##
 
 `BSD 3-Clause License`
