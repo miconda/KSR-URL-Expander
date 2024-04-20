@@ -456,6 +456,16 @@ Example:
 rfc
 ```
 
+### Command: rfcXYZW ###
+
+Navigate to IEFT RFCXYZW, where `XYZW` is the number of the RFC.
+
+Example:
+
+```
+rfc3262
+```
+
 ## License ##
 
 `BSD 3-Clause License`
