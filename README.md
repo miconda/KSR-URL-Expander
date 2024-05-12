@@ -24,7 +24,7 @@ See it in action:
       + [Chromium Browsers](#chromium-browsers)
       + [Firefox](#firefox)
    * [Usage](#usage)
-      + [Command: .](#command)
+      + [Command: .](#command-)
       + [Command: m name](#command-m-name)
       + [Command: md name](#command-md-name)
       + [Command: mi name](#command-mi-name)
