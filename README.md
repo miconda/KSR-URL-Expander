@@ -17,6 +17,51 @@ See it in action:
 
 ![Screencast](https://github.com/miconda/vresources/raw/master/ksr-url-expander/ksr-url-expander.gif)
 
+## Table Of Content ##
+
+- [KSR-URL-Expander](#ksr-url-expander)
+   * [Installation](#installation)
+      + [Chromium Browsers](#chromium-browsers)
+      + [Firefox](#firefox)
+   * [Usage](#usage)
+      + [Command: .](#command)
+      + [Command: m name](#command-m-name)
+      + [Command: md name](#command-md-name)
+      + [Command: mi name](#command-mi-name)
+      + [Command: mid name](#command-mid-name)
+      + [Command: s text](#command-s-text)
+      + [Command: sl text](#command-sl-text)
+      + [Command: w](#command-w)
+      + [Command: wo](#command-wo)
+      + [Command: cc series](#command-cc-series)
+      + [Command: ccd](#command-ccd)
+      + [Command: pv series](#command-pv-series)
+      + [Command: pvd](#command-pvd)
+      + [Command: tr series](#command-tr-series)
+      + [Command: trd](#command-trd)
+      + [Command: aif series](#command-aif-series)
+      + [Command: air series](#command-air-series)
+      + [Command: faq](#command-faq)
+      + [Command: gh](#command-gh)
+      + [Command: ghc commitid](#command-ghc-commitid)
+      + [Command: ghi](#command-ghi)
+      + [Command: ghd](#command-ghd)
+      + [Command: ghw](#command-ghw)
+      + [Command: ghk](#command-ghk)
+      + [Command: ghm name](#command-ghm-name)
+      + [Command: ghv](#command-ghv)
+      + [Command: ghp](#command-ghp)
+      + [Command: gho name](#command-gho-name)
+      + [Command: ke](#command-ke-)
+      + [Command: l listid](#command-l-listid)
+      + [Command: u](#command-u)
+      + [Command: kw](#command-kw)
+      + [Command: re](#command-re)
+      + [Command: rfc](#command-rfc)
+      + [Command: rfcXYZW](#command-rfcxyzw)
+   * [License](#license)
+   * [Contributions](#contributions)
+
 ## Installation ##
 
 At this moment the extension is not packaged, not being available in the
@@ -70,6 +115,17 @@ of Kamailio web site.
 
 The commands are listed in the next sections.
 
+### Command: . ###
+
+Navigate to main `kamailio.org` site. No parameters are expected, if there is text
+ after `.`, then it is not considered to be this command.
+
+Example:
+
+```
+.
+```
+
 ### Command: m name ###
 
 Navigate to documentation of the module specified by `name` in the stable branch.
@@ -96,17 +152,6 @@ modules matching what is typed are presented by the browser, you may have to typ
 further to narrow down suggestions list to include the module you are looking for.
 The number of suggstions (the value of N) can be changed in the browser settings,
 although it seems to be an upper limit like `15` (as seen in Chrome).
-
-### Command: . ###
-
-Navigate to main `kamailio.org` site. No parameters are expected, if there is text
- after `.`, then it is not considered to be this command.
-
-Example:
-
-```
-.
-```
 
 ### Command: md name ###
 
