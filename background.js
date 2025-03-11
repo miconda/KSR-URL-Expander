@@ -350,7 +350,7 @@ function getMatchingModules(input) {
 
   if (cmdMods.length > 0) {
     if (cmdMods === "mi " || cmdMods === "mid ") {
-      for (m of ksrModules) {
+      for (const m of ksrModules) {
         if (m.includes(cmdParam)) {
           let suggestion = {
             content: cmdMods + m,
@@ -363,7 +363,7 @@ function getMatchingModules(input) {
         return result;
       }
     } else {
-      for (m of ksrModules) {
+      for (const m of ksrModules) {
         if (m.indexOf(cmdParam) === 0) {
           let suggestion = {
             content: cmdMods + m,
@@ -380,7 +380,7 @@ function getMatchingModules(input) {
   }
 
   if (cmdWiki.length > 0) {
-    for (m of ksrSeries) {
+    for (const m of ksrSeries) {
       if (m.indexOf(cmdParam) === 0) {
         let suggestion = {
           content: cmdWiki + m,
@@ -396,7 +396,7 @@ function getMatchingModules(input) {
   }
 
   if (cmdList.length > 0) {
-    for (m of ksrMailingLists) {
+    for (const m of ksrMailingLists) {
       if (m.indexOf(cmdParam) === 0) {
         let suggestion = {
           content: cmdList + m,
